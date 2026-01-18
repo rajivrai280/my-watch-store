@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSAR BOMBA | TB8208A-01 Automatic</title>
+    <style>
+        :root { --orange: #ff6600; --black: #111; --white: #ffffff; --grey: #f4f4f4; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--white); color: var(--black); line-height: 1.6; }
+
+        nav { background: var(--black); color: white; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.4rem; font-weight: 800; letter-spacing: 2px; }
+
+        .container { display: flex; flex-wrap: wrap; padding: 60px 10%; gap: 50px; align-items: center; }
+        .product-image { flex: 1; min-width: 300px; text-align: center; }
+        .product-image img { width: 100%; max-width: 480px; filter: drop-shadow(0 25px 50px rgba(0,0,0,0.2)); }
+        
+        .product-info { flex: 1; min-width: 300px; }
+        .model-tag { color: var(--orange); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        h1 { font-size: 3rem; margin: 10px 0; font-weight: 900; line-height: 1.1; }
+        .price-row { display: flex; align-items: baseline; gap: 15px; margin-bottom: 5px; }
+        .price { font-size: 2.8rem; color: var(--orange); font-weight: bold; }
+        .mrp { text-decoration: line-through; color: #888; font-size: 1.2rem; }
+        .offer-tag { color: #25D366; font-weight: bold; margin-bottom: 25px; display: block; font-size: 1.1rem; }
+        
+        .payment-box { background: var(--grey); padding: 30px; border-radius: 20px; border: 2px solid var(--orange); margin-top: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .buy-btn { background: var(--black); color: white; padding: 18px 30px; border-radius: 12px; font-size: 1.1rem; cursor: pointer; text-decoration: none; display: block; text-align: center; font-weight: bold; margin-bottom: 15px; transition: all 0.3s; }
+        .buy-btn:hover { background: var(--orange); transform: translateY(-2px); }
+        .whatsapp-btn { background: #25D366; color: white; padding: 14px; text-decoration: none; display: block; text-align: center; border-radius: 12px; font-weight: 600; font-size: 1rem; }
+        
+        .qr-section { text-align: center; margin-top: 25px; padding-top: 25px; border-top: 1px dashed #bbb; }
+        .qr-section p { font-size: 0.9rem; font-weight: bold; margin-bottom: 10px; }
+        .qr-section img { width: 200px; border: 8px solid white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+
+        .specs { padding: 60px 10%; background: var(--black); color: white; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+        .spec-item h3 { color: var(--orange); font-size: 1.1rem; margin-bottom: 8px; }
+        .spec-item p { font-size: 0.85rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">TSAR BOMBA</div>
+    </nav>
+
+    <section class="container">
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/718y9F7mRDL._AC_SL1500_.jpg" alt="Tsar Bomba TB8208A-01">
+        </div>
+        <div class="product-info">
+            <span class="model-tag">Elemental Series | TB8208A-01</span>
+            <h1>Skeleton Orange <br>Automatic Motion</h1>
+            <div class="price-row">
+                <p class="price">₹5,000</p>
+                <span class="mrp">₹42,200</span>
+            </div>
+            <span class="offer-tag">Direct Factory Sale: 88% OFF Today!</span>
+
+            <div class="payment-box">
+                <a href="upi://pay?pa=8826966939@mbk&pn=TsarBombaStore&am=5000&cu=INR" class="buy-btn">BUY NOW via UPI (₹5,000)</a>
+                <div class="qr-section">
+                    <p>SCAN TO PAY DIRECTLY</p>
+                    <img src="myqr.png" alt="Payment QR Code">
+                    <p style="font-size: 0.75rem; color: #666;">UPI ID: 8826966939@mbk</p>
+                </div>
+                <a href="https://wa.me/918826966939?text=Paid%20₹5000%20for%20Tsar%20Bomba%20TB8208A-01.%20Here%20is%20my%20screenshot." class="whatsapp-btn">Send Receipt on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs">
+        <div class="spec-item"><h3>Movement</h3><p>Japanese Automatic (Motion Powered)</p></div>
+        <div class="spec-item"><h3>Glass</h3><p>Sapphire Crystal Glass (Scratch-Resistant)</p></div>
+        <div class="spec-item"><h3>Waterproof</h3><p>50 Meters (5 ATM)</p></div>
+        <div class="spec-item"><h3>Strap</h3><p>Comfort-Fit Orange Silicon</p></div>
+    </section>
+</body>
+</html>
